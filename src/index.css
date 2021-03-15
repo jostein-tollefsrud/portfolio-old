@@ -1,10 +1,48 @@
+@import './global-styles.css';
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    font-family: var(--font-main);
+    color: var(--color-text);
+    margin: 0;
+    padding: 0;
+}
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    margin: 0;
+    background-color: var(--color-bg-primary);
+    font-size: var(--font-size-main-mobile);
+    cursor: default;
+  }
+
+h1 {
+    font-size: var(--font-size-mobile-h1);
+}
+
+h1 {
+    font-family: var(--font-header);
+    font-size: var(--font-size-mobile-h1);
+}
+
+.container {
+    max-width: 1230px;
+    padding: 0 1em;
+    margin: auto;
+}
+
+p {
+    max-width: 62.5rem;
+}
+
+@media screen and (min-width: 600px) {
+    body {
+        font-size: var(--font-size-main-desktop);
+    }
+    h1 {
+        font-size: var(--font-size-desktop-h1);
+    }
 }
 
 code {

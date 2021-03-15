@@ -1,0 +1,14 @@
+:root {
+    --color-text: #0b0c0c;
+    --color-bg-primary: #ffffff;
+    --color-bg-secondary: #F2F7F9;
+    --color-bg-tertiary: #049CE5;
+
+    --font-header: 'Rubik', sans-serif;
+    --font-main: 'Inter', sans-serif;
+
+    --font-size-main-mobile: 1.13rem;
+    --font-size-main-desktop: 1.38rem;
+    --font-size-mobile-h1: 2.5rem;
+    --font-size-desktop-h1: 4.7rem;
+  }

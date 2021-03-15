@@ -1,0 +1,68 @@
+@import '../../global-styles.css';
+
+.navbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.navbar-bg {
+    border-bottom: 1px solid #DFE7E9;
+}
+
+.navbar nav ul {
+    list-style: none;
+    display: flex;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: var(--color-text);
+    font-size: var(--font-size-main-mobile);
+}
+
+nav a {
+    opacity: .6;
+    display: block;
+    padding: 1em 1.5em 1em 0;
+}
+
+.navbar nav a:hover {
+    opacity: 1;
+}
+
+.navbar-logo a {
+    font-weight: 700;
+    font-family: var(--font-header);
+    font-size: var(--font-size-main-desktop);
+}
+
+.navbar-logo {
+    padding: 1em 0 0 0;
+}
+
+@media screen and (min-width: 576px) {
+    .navbar-logo {
+        padding: 0;
+    }
+
+    .navbar nav a {
+        padding: 1.5em 1.5em;
+    }
+
+    .navbar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.active {
+    font-weight: 700;
+    opacity: 1;
+}
+
+.active a {
+    opacity: 1;
+}
